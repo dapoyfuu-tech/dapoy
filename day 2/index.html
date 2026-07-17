@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Song</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #f5f5f5;
+        overflow-x: hidden;
+        color: #222;
+      }
+
+      .container {
+        max-width: 850px;
+        margin: auto;
+        padding: 50px 20px;
+      }
+
+      .title {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      .title h1 {
+        font-size: 55px;
+        font-family: "Patrick Hand", cursive;
+        font-weight: normal;
+      }
+
+      .subtitle {
+        text-align: center;
+        color: #666;
+        font-size: 22px;
+        line-height: 1.6;
+        margin-bottom: 45px;
+      }
+
+      .music-card {
+        background: linear-gradient(#222);
+        border-radius: 35px;
+        padding: 30px;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        color: white;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+        flex-wrap: wrap;
+      }
+
+      .album img {
+        width: 250px;
+        height: 250px;
+        border-radius: 25px;
+        object-fit: cover;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .music-info {
+        flex: 1;
+      }
+
+      .music-info h2 {
+        font-size: 58px;
+        margin-bottom: 8px;
+      }
+
+      .music-info p {
+        font-size: 24px;
+        margin-bottom: 25px;
+        opacity: 0.9;
+      }
+
+      audio {
+        width: 100%;
+        margin-bottom: 25px;
+        border-radius: 50px;
+      }
+
+      .spotify-btn {
+        display: inline-block;
+        padding: 14px 30px;
+        border: 2px solid white;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .spotify-btn:hover {
+        background: white;
+        color: #c86400;
+      }
+
+      .message-box {
+        margin-top: 55px;
+        background: white;
+        padding: 40px;
+        border-radius: 30px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        position: relative;
+      }
+
+      .message-title {
+        text-align: center;
+        color: #666;
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+
+      .message {
+        font-family: "Patrick Hand", cursive;
+        font-size: 40px;
+        line-height: 1.7;
+      }
+
+      .heart {
+        position: fixed;
+        top: -10px;
+        color: #ff4d6d;
+        animation: fall linear forwards;
+        z-index: 999;
+        pointer-events: none;
+      }
+
+      @keyframes fall {
+        to {
+          transform: translateY(110vh);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .title h1 {
+          font-size: 42px;
+        }
+
+        .subtitle {
+          font-size: 18px;
+        }
+
+        .music-card {
+          text-align: center;
+          justify-content: center;
+        }
+
+        .album img {
+          width: 100%;
+          max-width: 280px;
+          height: auto;
+        }
+
+        .music-info h2 {
+          font-size: 42px;
+        }
+
+        .message {
+          font-size: 30px;
+        }
+
+        .message-box {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Hallooo sayanggkuu</h1>
+      </div>
+
+      <div class="subtitle">sorry</div>
+
+      <div class="music-card">
+        <div class="album">
+          <img src="logo.jpeg" />
+        </div>
+
+        <div class="music-info">
+          <h2>everything u are</h2>
+          <p>Hindia</p>
+
+          <!-- GANTI DENGAN FILE MP3 KAMU -->
+          <audio controls>
+            <source src="everything.mp3" type="audio/mp3" />
+          </audio>
+
+          <a href="#" class="spotify-btn"> Save on Spotify </a>
+        </div>
+      </div>
+
+      <div class="message-box">
+        <div class="message-title">im so lucky to have you</div>
+
+        <div class="message">
+          to my special people<br /><br />
+
+          makasi banya udaa jadi pelengkap di masa puti abu ini, meski aku masi
+          banya salaa ke kamuuuu belum bisa jadi yang terbaik buat kamu tapi
+          percaya de aku selalu berusaha buat jadi yang terbaik buat kamu.<br /><br />
+
+          semoga kita selalu bareng terus yaa, aku sayang banget sama kamuuuu
+        </div>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>
